@@ -93,9 +93,9 @@ class VoiceToText(Resource):
         finally:
             time.sleep(0.1)  # Slight delay if needed
             os.remove(file_path)  # Ensure file is removed
+api.add_resource(VoiceToText, "/voicetotext")
 
 api.add_resource(UppercaseText, "/uppercase")
-api.add_resource(VoiceToText, "/voicetotext")
 
 if __name__ == "__main__":
     app.run(debug=True)
