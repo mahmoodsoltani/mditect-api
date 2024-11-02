@@ -99,3 +99,4 @@ api.add_resource(VoiceToText, "/voicetotext")
 
 if __name__ == "__main__":
     app.run(debug=True)
+
